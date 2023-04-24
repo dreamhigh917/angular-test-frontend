@@ -11,8 +11,8 @@ import {
   providedIn: "root",
 })
 export class ApiService {
-  baseUri: string = "http://localhost:4000/api";
-  productUri: string = "http://localhost:4000/product";
+  baseUri: string = "http://angular-test-backend-7nvu.vercel.app/api";
+  productUri: string = "http://angular-test-backend-7nvu.vercel.app/product";
   headers = new HttpHeaders()
     .set("Content-Type", "application/json")
     .set("Authorization", localStorage.getItem("token"));
